@@ -1371,8 +1371,8 @@ console.log(hasil4); //false
 ```xml
 <script>
 var angka=12;
- 
-if (angka%2==0) 
+
+if (angka%2==0)
 {
    console.log("Angka = "+angka);
    console.log("Angka adalah bilangan genap");
@@ -1389,7 +1389,7 @@ else
 <script>
 var angka=5;
 
-switch (angka) 
+switch (angka)
 {
 case 1:
        console.log("Angka Satu");
@@ -1410,12 +1410,47 @@ default:
 </script>
 ```
 
+### Perulangan FOR ###
 
+```xml
+<script>
+var i;
+for (i=1;i<=10;i++)
+    console.log(i + ". Saya sedang belajar JavaScript");
+</script>
+```
 
+### Exercise ###
 
+Saya memiliki tampilan seperti dibawah ini.
 
+```xml
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tutorial Belajar JavaScript</title>
+</head>
+<body>
+<h2>Menampilkan Hasil Form HTML dengan JavaScript</h2>
 
+<form id="form1" name="form1" onsubmit="return false">
+  <label for="select1">Pilih Kota: </label>
+  <select id="select1" name="select1">
+    <option value="jakarta">Jakarta</option>
+    <option value="bandung">Bandung</option>
+    <option value="bogor">Bogor</option>
+  </select>
+  <input type="submit" value="Tampilkan Keterangan">
+</form>
 
+<p id="container"></p>
+
+</body>
+</html>
+```
+
+Tambahkan fungsi javascript supaya saat di klik button submit menampilkan nama kota yang dipilih kedalam container `p`.
 
 
 
